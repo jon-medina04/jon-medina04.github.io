@@ -1,0 +1,7 @@
+baseURL: "https://jon-medina04.github.io/"
+languageCode: "en-us"
+title: "Portfolio Jon Medina"
+theme: "toha"
+
+# Opcional: si quieres que los posts en borrador también se vean al hacer hugo server -D
+buildDrafts: true
