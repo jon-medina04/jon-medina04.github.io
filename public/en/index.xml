@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Portfolio on Mi Portafolio</title>
+    <link>http://localhost:1313/en/</link>
+    <description>Recent content in My Portfolio on Mi Portafolio</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/en/about/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/en/contact/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/contact/</guid>
+      <description>&lt;p&gt;I focus on projects that combine:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;AI-driven automation (agents, chatbots, extraction and classification)&lt;/li&gt;&#xA;&lt;li&gt;Analytics and business-oriented dashboards&lt;/li&gt;&#xA;&lt;li&gt;Integration of models into production (MLOps)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;If you&amp;rsquo;d like to share your case, write to me and I&amp;rsquo;ll reply quickly.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Experience</title>
+      <link>http://localhost:1313/en/experience/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/experience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Skills</title>
+      <link>http://localhost:1313/en/skills/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/skills/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stack</title>
+      <link>http://localhost:1313/en/technical/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/technical/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

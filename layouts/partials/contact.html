@@ -1,0 +1,205 @@
+<section id="contact" class="py-12 bg-bg dark:bg-bg border-t border-border-primary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-12 font-heading text-text-primary dark:text-text-primary">Let's Connect</h2>
+
+    <div class="flex flex-col lg:flex-row justify-center gap-12">
+      <!-- Contact Form -->
+      <div class="lg:w-1/2">
+        <div class="contact-card bg-bg dark:bg-bg p-8 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+          <h3 class="text-xl font-semibold mb-6 text-text-primary dark:text-text-primary">{{ i18n "sendMeAMessage" | default "Envíame un mensaje" }}</h3>
+
+          <!-- Quick actions (email / CV / socials) -->
+          <div class="flex flex-wrap gap-3 mb-6">
+            {{ with .Site.Params.email }}
+            <a href="mailto:{{ . }}" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-primary text-white shadow button-hover">
+              <i class="fas fa-envelope"></i> Email directo
+            </a>
+            <button type="button" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border-primary dark:border-border-primary text-text-primary dark:text-text-primary shadow button-hover" onclick="navigator.clipboard.writeText('{{ . }}').then(()=>showToast('📋 Email copiado'));">
+              <i class="fas fa-copy"></i> Copiar email
+            </button>
+            {{ end }}
+            {{ with .Site.Params.resume_url_en }}
+            <a href="{{ . }}" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-bg text-primary dark:text-white border border-primary shadow button-hover" download>
+              <i class="fas fa-file-pdf"></i> {{ $.Site.Params.resume_label | default "Descargar CV" }}
+            </a>
+            {{ end }}
+            {{ with .Site.Params.linkedin_url }}
+            <a href="{{ . }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border-primary dark:border-border-primary text-text-primary dark:text-text-primary shadow button-hover">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            {{ end }}
+            {{ with .Site.Params.github_url }}
+            <a href="{{ . }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border-primary dark:border-border-primary text-text-primary dark:text-text-primary shadow button-hover">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            {{ end }}
+          </div>
+
+          <form id="contact-form" action="" method="POST" class="space-y-6">
+            <input type="text" name="_gotcha" style="display:none">
+            <div class="flex flex-col sm:flex-row gap-4">
+              <div class="flex-1">
+                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-text-secondary mb-1">Nombre</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-border-primary dark:border-border-primary rounded-lg focus:ring-primary focus:border-primary dark:bg-bg dark:text-text-primary" placeholder="Tu nombre" required>
+              </div>
+              <div class="flex-1">
+                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-text-secondary mb-1">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-border-primary dark:border-border-primary rounded-lg focus:ring-primary focus:border-primary dark:bg-bg dark:text-text-primary" placeholder="nombre@empresa.com" required>
+              </div>
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-text-secondary mb-1">Asunto</label>
+              <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-border-primary dark:border-border-primary rounded-lg focus:ring-primary focus:border-primary dark:bg-bg dark:text-text-primary" placeholder="¿Sobre qué quieres hablar?" required>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 dark:text-text-secondary mb-1">Mensaje</label>
+              <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-border-primary dark:border-border-primary rounded-lg focus:ring-primary focus:border-primary dark:bg-bg dark:text-text-primary" placeholder="Cuéntame brevemente tu caso" required></textarea>
+            </div>
+            <div class="text-center">
+              <button id="contact-submit" type="submit" class="bg-gradient-primary text-white px-6 py-3 rounded-lg font-medium shadow-lg button-hover inline-flex items-center gap-2">
+                <span class="submit-text">Enviar mensaje</span>
+                <span class="submit-spinner hidden animate-spin"><i class="fas fa-circle-notch"></i></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="lg:w-1/2">
+        {{ with .Site.GetPage "contact" }}
+        <div class="contact-card bg-bg dark:bg-bg p-8 rounded-lg shadow-lg border border-border-primary dark:border-border-primary h-full card-hover">
+          <h3 class="text-xl font-semibold mb-6 text-text-primary dark:text-text-primary">{{ i18n "contactInformation" | default "Información de contacto" }}</h3>
+          {{ with .Params.intro }}<p class="mb-6 text-gray-700 dark:text-text-secondary">{{ . }}</p>{{ end }}
+          <div class="markdown-content text-gray-700 dark:text-text-secondary">
+            {{ .Content }}
+          </div>
+          <div class="space-y-4 mt-6">
+            {{ with $.Site.Params.email }}
+            <div class="flex items-start">
+              <div class="bg-second-lighter dark:bg-second-dark p-3 rounded-full mr-4">
+                <i class="fas fa-envelope text-second dark:text-second-light"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-text-primary dark:text-text-primary">Email</h4>
+                <a href="mailto:{{ . }}" class="text-primary dark:text-white">{{ . }}</a>
+              </div>
+            </div>
+            {{ end }}
+
+            {{ with $.Site.Params.linkedin_url }}
+            <div class="flex items-start">
+              <div class="bg-primary-lighter dark:bg-primary-dark p-3 rounded-full mr-4">
+                <i class="fab fa-linkedin-in text-primary dark:text-primary-light"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-text-primary dark:text-text-primary">LinkedIn</h4>
+                <a href="{{ . }}" target="_blank" class="text-primary dark:text-white">Perfil</a>
+              </div>
+            </div>
+            {{ end }}
+
+            {{ with $.Site.Params.github_url }}
+            <div class="flex items-start">
+              <div class="bg-primary-lighter dark:bg-primary-dark p-3 rounded-full mr-4">
+                <i class="fab fa-github text-primary dark:text-primary-light"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-text-primary dark:text-text-primary">GitHub</h4>
+                <a href="{{ . }}" target="_blank" class="text-primary dark:text-white">Repos</a>
+              </div>
+            </div>
+            {{ end }}
+
+            {{ with $.Site.Language.Params.hero_location }}
+            <div class="flex items-start">
+              <div class="bg-second-lighter dark:bg-second-dark p-3 rounded-full mr-4">
+                <i class="fas fa-map-marker-alt text-second dark:text-second-light"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-text-primary dark:text-text-primary">Ubicación</h4>
+                <p class="text-gray-700 dark:text-text-tertiary">{{ . }}</p>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+
+          {{ with $.Site.Params.collab_tags }}
+          <div class="mt-8">
+            <h4 class="font-medium mb-3 text-text-primary dark:text-text-primary">Abierto a colaborar en</h4>
+            <div class="flex flex-wrap gap-2">
+              {{ range . }}
+              <span class="collab-tag px-3 py-1 rounded-full text-sm">{{ . }}</span>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Inject endpoint from config if available
+  window.FORMSPREE_ENDPOINT = window.FORMSPREE_ENDPOINT || '{{ .Site.Params.formspree_endpoint }}';
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('contact-submit');
+    const submitText = submitBtn?.querySelector('.submit-text');
+    const submitSpinner = submitBtn?.querySelector('.submit-spinner');
+
+    function setSubmitting(isSubmitting) {
+      if (!submitBtn) return;
+      submitBtn.disabled = isSubmitting;
+      if (submitSpinner) submitSpinner.classList.toggle('hidden', !isSubmitting);
+      if (submitText) submitText.textContent = isSubmitting ? 'Enviando…' : 'Enviar mensaje';
+    }
+
+    if (!form) return;
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      setSubmitting(true);
+
+      const endpoint = window.FORMSPREE_ENDPOINT;
+      const formData = new FormData(form);
+
+      try {
+        if (endpoint) {
+          const response = await fetch(endpoint, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
+          if (response.ok) {
+            showToast('✅ ¡Gracias! Te responderé pronto.');
+            form.reset();
+          } else {
+            const data = await response.json().catch(() => ({}));
+            showToast('❌ Error: ' + (data?.message || 'inténtalo de nuevo.'));
+          }
+        } else if ('{{ .Site.Params.email }}') {
+          // Fallback: open mail client with prefilled subject/body
+          const subject = encodeURIComponent(formData.get('subject') || 'Contacto');
+          const body = encodeURIComponent(`${formData.get('name') || ''} <${formData.get('email') || ''}>
+\n\n${formData.get('message') || ''}`);
+          window.location.href = `mailto:{{ .Site.Params.email }}?subject=${subject}&body=${body}`;
+          showToast('✉️ Abriendo tu cliente de email…');
+        } else {
+          showToast('⚠️ Formulario no configurado. Añade formspree_endpoint o email en la configuración.');
+        }
+      } catch (error) {
+        console.error(error);
+        showToast('⚠️ No se pudo enviar. Revisa tu conexión.');
+      } finally {
+        setSubmitting(false);
+      }
+    });
+
+    window.showToast = function(message) {
+      const toast = document.createElement('div');
+      toast.textContent = message;
+      toast.className = 'fixed bottom-6 right-6 bg-second dark:bg-second-light text-white px-4 py-2 rounded shadow-lg z-50';
+      document.body.appendChild(toast);
+      setTimeout(() => toast.remove(), 3500);
+    }
+  });
+</script>

@@ -1,0 +1,83 @@
+[helloIm]
+other = "Hello, I'm"
+
+[getInTouch]
+other = "Get in touch"
+
+[viewCV]
+other = "View CV"
+
+[sendMeAMessage]
+other = "Send me a message"
+
+[contactInformation]
+other = "Contact information"
+
+[downloadResume]
+other = "Download resume"
+
+[keyAchievements]
+other = "Key achievements"
+
+[aboutMe]
+other = "About me"
+
+[connectOnLinkedIn]
+other = "Connect on LinkedIn"
+
+[quickFacts]
+other = "Quick facts"
+
+[more]
+other = "More"
+
+[interests]
+other = "Interests"
+
+[languages]
+other = "Languages"
+
+[aboutName]
+other = "About"
+
+[iframeIdRequired]
+other = "Iframe id is required"
+
+[fullscreen]
+other = "Fullscreen"
+
+[relatedContent]
+other = "Related content"
+
+[learnMore]
+other = "Learn more"
+
+[pageNotFound]
+other = "Page not found"
+
+[pageNotFoundSubtitle]
+other = "We couldn't find that page."
+
+[goHome]
+other = "Go home"
+
+[viewOnGithub]
+other = "View on GitHub"
+
+[youtubePlayerTitle]
+other = "YouTube player"
+
+[vimeoPlayerTitle]
+other = "Vimeo player"
+
+[demoImageAlt]
+other = "Demo image"
+
+[galleryNotFound]
+other = "Gallery not found"
+
+[certainlyNotHere]
+other = "Certainly not here"
+
+[priorityContact]
+other = "Preferred contact"

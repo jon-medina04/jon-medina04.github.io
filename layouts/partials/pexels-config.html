@@ -1,0 +1,19 @@
+{{/* Custom Pexels/Static Hero Config Override */}}
+{{ $staticHero := .Site.Params.hero_background_image | default "" }}
+{{ $queries := .Site.Params.pexels.queries | default (slice) }}
+<div id="pexels-config" style="display:none"></div>
+<script>
+  // If a static hero background is configured, prefer it
+  // Use relative URL for local dev/server compatibility
+  {{ if $staticHero }}
+  window.STATIC_HERO_IMAGE = "{{ $staticHero | relURL }}";
+  {{ else }}
+  window.STATIC_HERO_IMAGE = null;
+  {{ end }}
+
+  // Keep queries available (won't be used when STATIC_HERO_IMAGE is set)
+  window.PEXELS_QUERIES = {{ $queries | jsonify | safeJS }};
+
+  // API key can be provided by a backend later – not required for static images
+  window.PEXELS_API_KEY = null;
+</script>

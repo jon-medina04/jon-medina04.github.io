@@ -1,0 +1,140 @@
+baseURL = "https://example.org/"
+languageCode = "es"
+title = "Mi Portafolio"
+theme = "careercanvas"
+
+# Multilingual configuration
+defaultContentLanguage = "es"
+[languages]
+  [languages.es]
+    languageName = "Español"
+    languageCode = "es"
+    weight = 1
+
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 2
+
+[params]
+  name = "Jon Medina Jaureguizar"
+  tagline = "Especialista en IA y Big Data"
+  hero_location = "Bilbao, Basque Country"
+  email = "jon.medina04@somo.eus"
+  description = "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma especializado en Inteligencia Artificial y Big Data. Combino desarrollo de software, análisis de datos y aprendizaje automático para construir soluciones inteligentes y escalables."
+  profile_image = "/images/jon.jpg"
+  # Imagen de fondo estática para el héroe (pon aquí tu imagen)
+  hero_background_image = "/images/space_back1.jpeg"
+  # Etiquetas para colaboración (se usan en contacto)
+  collab_tags = ["Proyectos IA", "Automatización", "Chatbots", "Dashboards", "MLOps"]
+  # Endpoint opcional de Formspree u otro servicio
+  formspree_endpoint = ""
+  
+  # Resume/CV
+  resume_url_en = "/files/CV_Jon_MEdina_Jaureguizar.pdf"
+  resume_label = "CV completo"
+
+  [params.pexels]
+    enabled = true
+    [params.pexels.queries]
+      backgrounds = [
+        "nature",
+        "landscape",
+        "technology",
+        "abstract",
+        "code"
+      ]
+
+# redes sociales (CORRECTO para este tema)
+[[params.social]]
+  name = "GitHub"
+  url = "https://github.com/tuusuario"
+  icon = "github"
+
+[[params.social]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/tuusuario"
+  icon = "linkedin"
+
+[[params.social]]
+  name = "Twitter"
+  url = "https://twitter.com/tuusuario"
+  icon = "twitter"
+
+# skills
+[params.skills]
+  frontend = ["HTML5", "CSS3", "JavaScript", "React"]
+  backend = ["Node.js", "Go", "Python", "REST APIs"]
+  devops = ["Docker", "Kubernetes", "CI/CD", "AWS"]
+  marketing_ia = ["Automatización", "Analítica", "Machine Learning", "Personalización"]
+
+# experiencia
+[[params.experience]]
+  role = "Desarrollador Web Full-Stack"
+  company = "Empresa Ejemplo S.A."
+  start = "2023-01"
+  end = "Presente"
+  location = "Bilbao, España"
+  description = "Desarrollo de soluciones web e integración de IA para marketing."
+
+[[params.experience]]
+  role = "Ingeniero de Software"
+  company = "Otra Empresa Tech"
+  start = "2020-06"
+  end = "2022-12"
+  location = "Madrid, España"
+  description = "Trabajo en back-end con Go y microservicios."
+
+# proyectos
+[[params.projects]]
+  name = "Project Alpha"
+  url = "https://github.com/tuusuario/project-alpha"
+  description = "Aplicación web para automatizar procesos de marketing con IA."
+  tags = ["React", "Node.js", "Machine Learning"]
+
+[[params.projects]]
+  name = "Project Beta"
+  url = "https://github.com/tuusuario/project-beta"
+  description = "API de datos en Go desplegada en Kubernetes."
+  tags = ["Go", "Kubernetes", "AWS"]
+
+# seo / analytics
+[params.seo]
+  author = "Jon Medina Jaureguizar"
+  description = "Portafolio profesional — desarrollador web y marketing IA."
+  keywords = ["Desarrollador Web","Full-Stack","Marketing IA","Bilbao","Portafolio"]
+  image = "/images/og-image.jpg"
+
+[params.analytics]
+  googleAnalytics = ""
+
+# menú
+[[menu.main]]
+  name = "About"
+  url = "/#about"
+  weight = 2
+
+[[menu.main]]
+  name = "Skills"
+  url = "/#skills"
+  weight = 3
+
+[[menu.main]]
+  name = "Experience"
+  url = "/#experience"
+  weight = 4
+
+[[menu.main]]
+  name = "Stack"
+  url = "/#technical"
+  weight = 5
+
+[[menu.main]]
+  name = "Projects"
+  url = "/#projects"
+  weight = 6
+
+[[menu.main]]
+  name = "Contact"
+  url = "/#contact"
+  weight = 7

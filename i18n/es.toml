@@ -1,0 +1,83 @@
+[helloIm]
+other = "Hola, soy"
+
+[getInTouch]
+other = "Contáctame"
+
+[viewCV]
+other = "Ver CV"
+
+[sendMeAMessage]
+other = "Envíame un mensaje"
+
+[contactInformation]
+other = "Información de contacto"
+
+[downloadResume]
+other = "Descargar CV"
+
+[keyAchievements]
+other = "Logros clave"
+
+[aboutMe]
+other = "Sobre mí"
+
+[connectOnLinkedIn]
+other = "Conectar en LinkedIn"
+
+[quickFacts]
+other = "Datos rápidos"
+
+[more]
+other = "Más"
+
+[interests]
+other = "Intereses"
+
+[languages]
+other = "Idiomas"
+
+[aboutName]
+other = "Sobre"
+
+[iframeIdRequired]
+other = "Se requiere identificador del iframe"
+
+[fullscreen]
+other = "Pantalla completa"
+
+[relatedContent]
+other = "Contenido relacionado"
+
+[learnMore]
+other = "Saber más"
+
+[pageNotFound]
+other = "Página no encontrada"
+
+[pageNotFoundSubtitle]
+other = "No se ha podido encontrar la página."
+
+[goHome]
+other = "Ir al inicio"
+
+[viewOnGithub]
+other = "Ver en GitHub"
+
+[youtubePlayerTitle]
+other = "Reproductor de YouTube"
+
+[vimeoPlayerTitle]
+other = "Reproductor de Vimeo"
+
+[demoImageAlt]
+other = "Imagen de ejemplo"
+
+[galleryNotFound]
+other = "Galería no encontrada"
+
+[certainlyNotHere]
+other = "Seguro que no está aquí"
+
+[priorityContact]
+other = "Contacto preferente"
