@@ -126,7 +126,7 @@
     
       
     
-    <link rel="stylesheet" href="/css/main.min.c9a47483bc2b446428fec72727518d5fa917ade5417c6b6a4c2696100a9d53be.css?v=1762255877" data-version="1762255877">
+    <link rel="stylesheet" href="/css/main.min.c9a47483bc2b446428fec72727518d5fa917ade5417c6b6a4c2696100a9d53be.css?v=1762256749" data-version="1762256749">
     <style>
          
         body {
@@ -194,13 +194,14 @@
         
         
         
-  
-  
-  
-  
+        
+        
+        
+        
         <div class="relative group">
-          <a href="#" class="nav-link text-text-primary dark:text-text-primary flex items-center" aria-label="Language switcher">
-            <span class="text-lg mr-1">🇬🇧</span>
+          <a href="#" class="nav-link text-text-primary dark:text-text-primary flex items-center whitespace-nowrap" aria-label="Language switcher">
+            <i class="fas fa-globe mr-2"></i>
+            <span class="font-semibold">EN</span>
             <i class="fas fa-chevron-down ml-1 text-sm"></i>
           </a>
           <div class="submenu absolute right-0 top-full mt-2 bg-bg dark:bg-bg shadow-lg rounded-lg z-50 min-w-[8rem] opacity-0 invisible">
@@ -208,30 +209,6 @@
             
               
               
-            
-              
-              
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                  
-                    
-                  
-                
-                
-                <a href="/en/" class="nav-link block px-4 py-2 text-sm text-text-primary dark:text-text-primary font-semibold">
-                  <span class="mr-2">🇬🇧</span>English
-                </a>
-              
-            
-              
-              
                 
                 
                 
@@ -249,9 +226,33 @@
                   
                 
                 
-                <a href="/tags/" class="nav-link block px-4 py-2 text-sm text-text-primary dark:text-text-primary ">
-                  <span class="mr-2">��</span>Español
+                <a href="/tags/" class="nav-link block px-4 py-2 text-sm text-text-primary dark:text-text-primary whitespace-nowrap hover:bg-gradient-primary/10 ">
+                  <span class="mr-2 font-bold">ES</span>Español
                 </a>
+              
+            
+              
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                  
+                    
+                  
+                
+                
+                <a href="/en/" class="nav-link block px-4 py-2 text-sm text-text-primary dark:text-text-primary whitespace-nowrap hover:bg-gradient-primary/10 font-semibold bg-gradient-primary/5">
+                  <span class="mr-2 font-bold">EN</span>English
+                </a>
+              
+            
+              
               
             
           </div>
@@ -662,6 +663,17 @@
 
 <script>
   
+  window.HUGO_STATIC_COLORS = {
+    enabled: false,
+    palette: {
+      name: "professional",
+      main_color: "#474A51",
+      second_color: "#E52521",
+      third_color: "#3CB043"
+    }
+  };
+
+  
   window.HUGO_COLOR_PALETTES = [
     
   ];
@@ -670,10 +682,15 @@
   if (window.HUGO_COLOR_PALETTES && window.HUGO_COLOR_PALETTES.length > 0) {
     console.log('🎨 Using color palettes from Hugo config:', window.HUGO_COLOR_PALETTES.length, 'palettes');
   }
+  
+  
+  if (window.HUGO_STATIC_COLORS && !window.HUGO_STATIC_COLORS.enabled) {
+    console.log('🎨 Static color mode enabled:', window.HUGO_STATIC_COLORS.palette.name);
+  }
 </script>
 
     <script src="/js/scripts.min.b6e79814155cf02c33cf809dde2d11276e3a6e63f9671f039a78ce333e82ecbe.js"></script>
-    <script src="/js/dynamic-colors.min.6a387c448192ede54f610667cc57e48efd8a1b5a4ff417cee74f1860886f5e25.js"></script>
+    <script src="/js/dynamic-colors.min.0ddea99fcc6f58de20e51e3d26757d08d189305e5e82b4035ed793f2cd34f550.js"></script>
     <script src="/js/gsap-animations.min.8d4514b912ddd23fdf965b784542b279d8db50daad1aaa856e8204dd69252297.js"></script>
     <script src="/js/pexels-background.min.2fbbff36625e53ddd5ec6a96d07c5764ba9c44a4370405eaf579f67c377e2722.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js"></script>

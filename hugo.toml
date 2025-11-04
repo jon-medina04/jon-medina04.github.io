@@ -34,6 +34,14 @@ defaultContentLanguage = "es"
   resume_url_en = "/files/CV_Jon_MEdina_Jaureguizar.pdf"
   resume_label = "CV completo"
 
+  # Colores estáticos del tema (desactiva el sistema dinámico)
+  [params.colors]
+    enabled = false  # Desactiva el sistema de colores dinámicos
+    static_palette = "professional"  # Usa solo esta paleta
+    main_color = "#474A51"     # Graphite Gray
+    second_color = "#E52521"   # Mario Red
+    third_color = "#3CB043"    # Luigi Green
+
   [params.pexels]
     enabled = true
     [params.pexels.queries]
