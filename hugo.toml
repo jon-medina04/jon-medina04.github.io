@@ -108,33 +108,64 @@ defaultContentLanguage = "es"
 [params.analytics]
   googleAnalytics = ""
 
-# menú
-[[menu.main]]
-  name = "About"
+# Menú en español
+[[languages.es.menu.main]]
+  name = "Sobre mí"
   url = "/#about"
   weight = 2
 
-[[menu.main]]
-  name = "Skills"
+[[languages.es.menu.main]]
+  name = "Habilidades"
   url = "/#skills"
   weight = 3
 
-[[menu.main]]
-  name = "Experience"
+[[languages.es.menu.main]]
+  name = "Experiencia"
   url = "/#experience"
   weight = 4
 
-[[menu.main]]
+[[languages.es.menu.main]]
   name = "Stack"
   url = "/#technical"
   weight = 5
 
-[[menu.main]]
+[[languages.es.menu.main]]
+  name = "Proyectos"
+  url = "/#projects"
+  weight = 6
+
+[[languages.es.menu.main]]
+  name = "Contacto"
+  url = "/#contact"
+  weight = 7
+
+# Menú en inglés
+[[languages.en.menu.main]]
+  name = "About"
+  url = "/#about"
+  weight = 2
+
+[[languages.en.menu.main]]
+  name = "Skills"
+  url = "/#skills"
+  weight = 3
+
+[[languages.en.menu.main]]
+  name = "Experience"
+  url = "/#experience"
+  weight = 4
+
+[[languages.en.menu.main]]
+  name = "Stack"
+  url = "/#technical"
+  weight = 5
+
+[[languages.en.menu.main]]
   name = "Projects"
   url = "/#projects"
   weight = 6
 
-[[menu.main]]
+[[languages.en.menu.main]]
   name = "Contact"
   url = "/#contact"
   weight = 7

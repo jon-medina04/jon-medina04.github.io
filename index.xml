@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mi Portafolio</title>
-    <link>http://localhost:1313/</link>
+    <link>https://example.org/</link>
     <description>Recent content on Mi Portafolio</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contacto</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>https://example.org/contact/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>https://example.org/contact/</guid>
       <description>&lt;p&gt;Estoy enfocado en proyectos que combinen:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Automatización con IA (agentes, chatbots, extracción y clasificación)&lt;/li&gt;&#xA;&lt;li&gt;Analítica y cuadros de mando orientados a negocio&lt;/li&gt;&#xA;&lt;li&gt;Integración de modelos en producción (MLOps)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Si quieres contarme tu caso, escríbeme y te respondo rápido.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Experiencia</title>
-      <link>http://localhost:1313/experience/</link>
+      <link>https://example.org/experience/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experience/</guid>
+      <guid>https://example.org/experience/</guid>
       <description></description>
     </item>
     <item>
       <title>Skills</title>
-      <link>http://localhost:1313/skills/</link>
+      <link>https://example.org/skills/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/skills/</guid>
+      <guid>https://example.org/skills/</guid>
       <description></description>
     </item>
     <item>
       <title>Sobre mí</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://example.org/about/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://example.org/about/</guid>
       <description></description>
     </item>
     <item>
       <title>Stack</title>
-      <link>http://localhost:1313/technical/</link>
+      <link>https://example.org/technical/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/technical/</guid>
+      <guid>https://example.org/technical/</guid>
       <description></description>
     </item>
   </channel>
